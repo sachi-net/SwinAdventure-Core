@@ -38,5 +38,12 @@
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="SwinAdventureLibrary.Bag">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAAAAgQAAAA=</HashCode>
+      <FileName>Bag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
