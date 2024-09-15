@@ -62,8 +62,11 @@ public class PlayerTests
     [Test(Description = "The player's full description contains the text")]
     public void TestPlayerFullDescription()
     {
-        string expected = "You are Sachi the mighty programmer.\r\nYou are carrying" +
-            "\r\n\ta shovel (shovel)\r\n\ta sword (sword)\r\n\ta small computer (pc)\r\n";
+        string expected = "You are Sachi the mighty programmer." + Environment.NewLine +
+            "You are carrying" + Environment.NewLine +
+            "\ta shovel (shovel)" + Environment.NewLine +
+            "\ta sword (sword)" + Environment.NewLine +
+            "\ta small computer (pc)" + Environment.NewLine;
         string actual = player.FullDescription;
         Assert.That(actual, Is.EqualTo(expected));
     }
