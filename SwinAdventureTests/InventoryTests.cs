@@ -62,7 +62,9 @@ public class InventoryTests
     [Test(Description = "Returns a string containing multiple lines. Each line contains a tab-indented short description of an item in the Inventory")]
     public void TestItemList()
     {
-        string expected = "\ta shovel (shovel)\r\n\ta sword (sword)\r\n\ta small computer (pc)\r\n";
+        string expected = "\ta shovel (shovel)" + Environment.NewLine +
+            "\ta sword (sword)" + Environment.NewLine +
+            "\ta small computer (pc)" + Environment.NewLine;
         string actual = inventory.ItemList;
         Assert.That (actual, Is.EqualTo(expected));
     }

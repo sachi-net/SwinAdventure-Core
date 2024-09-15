@@ -54,8 +54,10 @@ public class BagTests
     [Test(Description = "The bag's full description contains the text")]
     public void TestBagFullDescription()
     {
-        string expected = "In the satchel, you can see" +
-            "\r\n\ta key (key)\r\n\ta map (map)\r\n\ta flashlight (torch)\r\n";
+        string expected = "In the satchel, you can see" + Environment.NewLine +
+            "\ta key (key)" + Environment.NewLine +
+            "\ta map (map)" + Environment.NewLine +
+            "\ta flashlight (torch)" + Environment.NewLine;
         string actual = bag.FullDescription;
         Assert.That(actual, Is.EqualTo(expected));
     }
